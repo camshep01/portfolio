@@ -7,6 +7,10 @@ body {
     
   }
 
+  #intro-text {
+    padding-top:100px;
+  }
+
   a {
     text-decoration: none;
     color:black;
@@ -17,6 +21,7 @@ body {
 
   .thumb {
     position:relative;
+    padding-bottom:20px;
   }
 
 
@@ -44,6 +49,10 @@ body {
     text-transform: uppercase;
     font-family: 'Bowlby One SC', cursive;
 
+  }
+
+  h4 {
+    font-family: 'Bowlby One SC', cursive;
   }
 
   #hero-image {
@@ -114,6 +123,13 @@ background-size:cover;
 float:right;
 border-radius: 20px;
 box-shadow: 5px 10px 8px #e0e0e0;
+
+}
+
+.thumb-image-3 {
+  width:100%; 
+  height:100%;
+
 
 }
 
