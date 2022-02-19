@@ -11,219 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Coda:wght@800&family=Licorice&family=Noto+Sans+JP:wght@100&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
-    <title>Hello, world!</title>
-    <style>
+    <link type="text/css" rel="stylesheet" href="css/style.css" /> 
 
-      body {
-        background-color:white;
-        font-family: 'Roboto', sans-serif;
-        
-      }
-
-      a {
-        text-decoration: none;
-        color:black;
-      }
-      .white {
-        color: white;
-      }
-
-      .thumb {
-        position:relative;
-      }
-
-   
-      .overlay {
-        z-index:1;
-        position:absolute;
-        color:white;
-        padding:0; 
-        width:99%;
-        height:99%;
-        margin:0;
-        opacity:0;
-        border-radius: 20px;
-        overflow: hidden;
-       
-      }
-
-      .overlay #text {
-        margin-top:50%;
-        padding-left:10px;
-      }
-
-      .overlay #text h4  {
-        font-size:2rem;
-        text-transform: uppercase;
-        font-family: 'Bowlby One SC', cursive;
-
-      }
-
-      #hero-image {
-        background-image:url('./images/4.png'); 
-        background-repeat: no-repeat;
-        background-size:cover; 
-        height:700px; 
-        width:100%; 
-        border-radius:24em 2em;
-
-      }
-
-
-    @media only screen and (max-width: 400px) {
-
-    #hero-image, .spacer, #round {
-      display:none;
-    }
-    
-
-}
-
-a[class^="fa"] {
-  text-decoration: none;
-  font-size:1.5rem;
-  padding-right:15px;
-  margin-bottom:10px;
-  color:black;
-}
-
-#logo {
-  width:30px;
-  height:30px;
-  border-radius:5px;
-}
-.navbar-light {
-  border-bottom:1px solid rgb(241, 241, 241);
-}
-
-
-.navbar-light .navbar-nav .nav-link.active {
-  color:black;
-  font-weight: bold;
+    <title>Portfolio</title>
  
-}
-
-
-.thumb-image {
-  border-radius: 20px;
-  width:100%; 
-  height:500px;
-  max-width:100%;
-  max-height:500px;
-  background-repeat: no-repeat;
-  background-size:cover;
-  
-
-}
-
-
-.thumb-image-2 {
-  width:100%; 
-  height:500px;
-  max-width:100%;
-  max-height:600px;
-  background-repeat: no-repeat;
-  background-size:cover;
-  float:right;
-  
-  
-
-}
-
-
-/* div[class*="thumb"]:hover .thumb-image:before { 
-  height: 99%;
-  transition: all 1s ease-in;
-
- } */
-
- a[class*="nav-link"] {
-   margin-right:40px;
-   text-transform: uppercase;
-
- }
- .links {
-    box-shadow: inset 0 0 0 0 black;
-    color: black;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
- }
-
- .links:hover {
-  box-shadow: inset 250px 0 0 0 black;
-   color:white;
- }
-
- ul {
-   list-style: none;
-   margin:0;
-   padding:0;
- }
-
- ul li {
-   margin-top:10px;
- }
-
- .spacer {
-  aspect-ratio: 1000/600;
-  width:100%;
-  height:100%;
-  background-repeat: no-repeat; 
-  background-size:cover;
-  background-image: url('./images/blob-haikei.svg');
-  position:absolute;
-  top:0;
-  left:-10px;
-  z-index:1;
-
- }
-
-#ux-projects {
-  background-color:#e7eaed;
-}
-
-.custom-shape-divider-top-1645228639 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1645228639 svg {
-    position: relative;
-    display: block;
-    width: calc(120% + 1.3px);
-    height: 181px;
-}
-
-.custom-shape-divider-top-1645228639 .shape-fill {
-    fill: #FFFFFF;
-}
-
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
- margin-left:30%;
-}
-
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-
-
-
-
-
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-none">
@@ -235,19 +26,20 @@ a[class^="fa"] {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="./">Home</a>
-            <a class="nav-link" href="./about.html">Projects</a>
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="#ux-projects">Projects</a>
+            <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="./contact.html">Resume</a>
+            <a class="nav-link" href="https://gelements.net/">Blog</a>
           </div>
          
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid m-0 p-0">
       <div id="intro" class="row m-4">
         <div class="col-md-6">
-          <h1 class="font-weight-bold text-uppercase" style="font-family: 'Roboto', sans-serif; font-size: 4rem;">Hi, I'm Camille</br> UX/UI Designer</h1>
+          <h1 class="font-weight-bold text-uppercase" style="font-family: 'Roboto', sans-serif; font-size: 4rem;">UX/UI Designer</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
@@ -256,18 +48,18 @@ a[class^="fa"] {
         </br>
         <ul>
           <li>
-            <span class="links" style="border-bottom:4px solid black; margin-right:10px;">UX CASE STUDIES</span>
+            <a href="#ux-projects"><span class="links" style="border-bottom:4px solid black; margin-right:10px;">UX CASE STUDIES</span></a>
           </li>
           <li>
-            <span class="links" style="border-bottom:4px solid black;">GENERATIVE ART PROJECTS</span>
+            <a href="#generative-art"><span class="links" style="border-bottom:4px solid black;">GENERATIVE ART PROJECTS</span></a>
           </li>
           <li>
-            <span class="links" style="border-bottom:4px solid black;">GET IN TOUCH</span>
+            <a href="#contact"><span class="links" style="border-bottom:4px solid black;">GET IN TOUCH</span></a>
           </li>
         </ul>  
-        <div id="round" style="width:30px;height:30px;border:2px solid black; border-radius:100%; margin-top:20%; margin-left:50%;"> 
+<!--         <div id="round" style="width:30px;height:30px;border:2px solid black; border-radius:100%; margin-top:20%; margin-left:50%;"> 
           <i class="arrow down"></i>
-        </div>
+        </div> -->
        
         </div>
         <div class="col-md-6" style="position: relative;">
@@ -277,7 +69,7 @@ a[class^="fa"] {
       </div>
 </div>
 
-      <section style="position:relative;" id="ux-projects">
+       <section style="position:relative;margin:0;padding:0;" id="ux-projects">
 
 
         <div class="custom-shape-divider-top-1645228639">
@@ -289,36 +81,37 @@ a[class^="fa"] {
       </div>
 
 
+      <div class="container">
 
-
-      <div class="row g-2 thumb-container mb-4" style="padding-top:150px;">
-
+        <h5 style="padding:160px 0px 20px 20px; border-bottom:3px solid black;width:15%;">UX/UI</h5>
+        
+        <div class="row" style="margin-top:20px;">
         
         <div class="col-md-8 col-sm-12 m-0 p-4 thumb">
           <a class="m-0 p-0" href="./projects/1.html">
-            <div class="thumb-image" style="background-image: url(./images/1.webp);"></div>
+            <div class="thumb-image" style="background-image: url(./images/c.jpg);"></div>
           </a>
         </div>
 
 
-        <div class="col-md-4 col-sm-12 m-0 thumb px-4 pm-4">
+        <div class="col-md-4 col-sm-12 m-0 thumb px-4" style="padding-top:40px;">
           <h4>Item Heading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <span class="links" style="border-bottom:4px solid black; margin-right:10px;">VIEW CASE STUDY</span>
+          <a href="./projects/1.html"><span class="links" style="border-bottom:4px solid black; margin-right:10px;">VIEW CASE STUDY</span></a>
         </div>
       </div>
 
 
-      <div class="row g-2 thumb-container">
+    <div class="row g-2 thumb-container">
         
         <div class="col-md-6 col-sm-12 m-0 p-4 thumb">
           <a class="m-0 p-0" href="./projects/1.html">
-            <div class="thumb-image" style="background-image: url(./images/3.webp);"></div>
+            <div class="thumb-image" style="background-image: url(./images/a.jpg);"></div>
           </a>
         </div>
 
 
-        <div class="col-md-4 col-sm-12 m-0 thumb px-4">
+        <div class="col-md-4 col-sm-12 m-0 thumb px-4" style="padding-top:40px;">
           <h4>Item Heading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <span class="links" style="border-bottom:4px solid black; margin-right:10px;">VIEW CASE STUDY</span>
@@ -327,42 +120,42 @@ a[class^="fa"] {
 
 
       <div class="row g-2 thumb-container">
-
-
         <div class="col-md-6 col-sm-12 m-0 p-4 thumb">
           <a class="m-0 p-0" href="./projects/1.html">
-            <div class="thumb-image" style="background-image: url(./images/4.webp);"></div>
+            <div class="thumb-image" style="background-image: url(./images/b.jpg);"></div>
           </a>
         </div>
 
-        <div class="col-md-4 col-sm-12 m-0 thumb px-4 pb-4">
+        <div class="col-md-4 col-sm-12 m-0 thumb px-4 pb-4" style="padding-top:40px;">
           <h4>Item Heading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <span class="links" style="border-bottom:4px solid black; margin-right:10px;">VIEW CASE STUDY</span>
         </div>
       </div> 
 
-   
+    </div>
 
-       
+  </section>
 
+    <section id="generative-art">
 
-      </section>
-
-      <section id="generative-art">
+      <div class="container">
 
         <h5 style="padding:20px;border-bottom:3px solid black;width:15%;">GENERATIVE ART</h5>
 
-        <div class="row thumb-container mb-2" style="padding-top:20px;">
+        <div class="row thumb-container g-2 mb-2" style="padding-top:20px;">
 
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+          <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
+            <a href="./generative-art/1.html">
               <div class="thumb-image-2" style="background-image: url(./images/screen-1475595.jpg);"></div>
+            </a>
              
                 <h4>Item Heading</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="./generative-art/1.html"><p>Read more</p></a>
             </div>
 
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+            <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
               <div class="thumb-image-2" style="background-image: url(./images/screen-0112.jpg);"></div>
            
                 <h4>Item Heading</h4>
@@ -370,39 +163,32 @@ a[class^="fa"] {
             </div>
 
 
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+            <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
               <div class="thumb-image-2" style="background-image: url(./images/screen-42398.jpg);"></div>
               <h4>Item Heading</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
             </div>
-
-
-      
-
         </div>
 
   
             <div class="row thumb-container">
 
-
-
-
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+              <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
               <div class="thumb-image-2" style="background-image: url(./images/screen-88952.jpg);"></div>
               <h4>Item Heading</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
             </div>
 
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+            <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
               <div class="thumb-image-2" style="background-image: url(./images/screen-54756.jpg);"></div>
               <h4>Item Heading</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
             </div>
 
-            <div class="col-md-4 col-sm-12 m-0 px-4">
+            <div class="col-md-4 col-sm-12 m-0 p-4 thumb">
               <div class="thumb-image-2" style="background-image: url(./images/screen-73442.jpg);"></div>
               <h4>Item Heading</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -412,9 +198,36 @@ a[class^="fa"] {
             </div>
       </div>
 
-
+    </div>
 
       </section>
+
+    <section id="about">
+      <div class="container">
+        <h5 style="padding:20px;border-bottom:3px solid black;width:15%;text-transform: uppercase;">about me</h5>
+      <div class="row">
+        <div class="col m-0 p-4">
+         
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Read more about me <a href="about.html" style="text-decoration: underline;">here.</a></p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+      <div class="row">
+        <div class="col m-0 p-4">
+         
+          <h1>email@gmail.com</h1>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+      </div>
+      </div>
+    </section>
 
     
     <!-- Optional JavaScript; choose one of the two! -->
