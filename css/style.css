@@ -71,6 +71,25 @@ body {
 
   }
 
+  .tiktok-embed {
+
+    max-width: 605px;
+    min-width: 325px;
+  }
+
+
+
+  @media only screen and (max-width: 320px) {
+  .tiktok-embed {
+    max-width: 105px; 
+    min-width: 265px; 
+    overflow-y:hidden;
+   
+  
+  }
+
+}
+
 
 @media only screen and (max-width: 400px) {
 
@@ -249,7 +268,8 @@ transform: rotate(45deg);
 }
 
 .btn {
-  width:300px;
+  max-width:300px;
+  min-width:100px;
   margin-bottom:10px;
 }
 
@@ -257,12 +277,14 @@ pre code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
-  padding: 2px;
-  margin:2px;
+  padding: 0px;
+  margin:0px;
   overflow-y:scroll;
   max-height:600px;
  
 }
+
+
 
 
 
