@@ -1,5 +1,5 @@
 function nav(){
-    var postsList = ['1','2','3','4'];
+    var postsList = ['1.html','2.html','3.html','4.html'];
     var current = window.location.pathname.split('/').pop();
     var previous = document.getElementById('previous');
     var next = document.getElementById('next');
