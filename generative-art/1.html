@@ -3,7 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,7 +17,7 @@
   <body onLoad="nav()">
     <nav class="navbar navbar-expand-lg navbar-light bg-none">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./"><img id="logo" src="../images/facebookprofile.jpeg"></a>
+          <a class="navbar-brand" href="/"><img id="logo" src="../images/facebookprofile.jpeg"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -85,6 +86,86 @@
                       <div class="col-md-6">
                         <h1>Project Header</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <pre>
+                        <code>
+                          PImage img;
+                          int savedTime;
+                          int totalTime = 600000;
+                          
+                          void setup() {
+                            size(500,750);
+                            img = loadImage("your-image");
+                            background(0);
+                            smooth();
+                            savedTime = millis();
+                          }
+                          
+                          void draw() {
+                            // Pick a random point
+                            int x = int(random(img.width));
+                            int y = int(random(img.height));
+                            int loc = x + y*img.width;
+                            //int end = int(random(20,50));
+                            //int end2 = int(random(50));
+                            int end = 1;
+                            int end2 = 1;
+                            int standard = 1;
+                          
+                            
+                            // Look up the RGB color in the source image
+                            loadPixels();
+                            float r = red(img.pixels[loc]);
+                            float g = green(img.pixels[loc]);
+                            float b = blue(img.pixels[loc]);
+                            int color_info = color(int(r),int(g),int(b));
+                            //noStroke();
+                            // Draw an ellipse at that location with that color
+                            fill(r,g,b,100);
+                            //noFill();
+                            stroke(r,g,b,100);
+                            strokeWeight(1);
+                            if (int(b) <= 30){
+                               rect(x,y,standard,standard);
+                               
+                          }else if (int(b) > 100 && int(b) < 200 ){
+                             //fill(r,g,b,100);
+                            //triangle(x,y,x + random(20,30),y + random(30),x+ 10,y+ 20);
+                             rect(x,y,standard + 5,standard + 5);  
+                             
+                          }else if (int(b) > 200 && int(b) < 300 ){
+                            rect(x,y,standard + 10,standard + 10);
+                             
+                          }else if (int(b) > 30 && int(b) < 70 ){
+                             fill(r,g,b,100);
+                             rect(x,y,standard,standard);   
+                            
+                          }else if (x > 300 && int(b) > 100){
+                            //strokeWeight(random(4));
+                            //line(x,y,end,end);
+                            rect(x,y,end,end);
+                            
+                          }else if (y > 500 && int(b) < 30 ){
+                            //fill(r,g,b,100);
+                            ///triangle(x,y,x + random(20,50),y + random(30),x+ 10,y+ 20);
+                             rect(x,y,end,end); 
+                           
+                          }else{
+                            //fill(r,g,b,100);
+                            //triangle(x,y,x + random(20,50),y + random(30),x+ 10,y+ 20);
+                            rect(x,y,end2,end2);
+                            
+                          }
+                          
+                          int passedTime = millis() - savedTime;
+                            // Has five seconds passed?
+                          if (passedTime > totalTime) {
+                              saveFrame("screen-####.jpg");
+                              savedTime = millis(); // Save the current time to restart the timer!
+                          }
+                          
+                          }
+                          </code>
+                        </pre>
                     </div>
                 </div>
 

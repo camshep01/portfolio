@@ -11,6 +11,10 @@ body {
     padding-top:100px;
   }
 
+  #intro-text h1 {
+    font-size: 4rem;
+  }
+
   a {
     text-decoration: none;
     color:black;
@@ -23,6 +27,8 @@ body {
     position:relative;
     padding-bottom:20px;
   }
+
+
 
 
   .overlay {
@@ -73,6 +79,11 @@ body {
 }
 
 
+#intro-text h1 {
+  font-size: 2rem;
+}
+
+
 }
 
 a[class^="fa"] {
@@ -87,6 +98,7 @@ color:black;
 width:30px;
 height:30px;
 border-radius:5px;
+
 }
 .navbar-light {
 border-bottom:1px solid rgb(241, 241, 241);
@@ -239,6 +251,17 @@ transform: rotate(45deg);
 .btn {
   width:300px;
   margin-bottom:10px;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 2px;
+  margin:2px;
+  overflow-y:scroll;
+  max-height:600px;
+ 
 }
 
 
