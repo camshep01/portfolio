@@ -197,11 +197,11 @@ padding: 0 .25rem;
 transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.links:hover {
+ .links:hover {
 box-shadow: inset 250px 0 0 0 black;
 color:white;
 }
-
+ 
 ul {
 list-style: none;
 margin:0;
