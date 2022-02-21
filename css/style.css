@@ -6,6 +6,17 @@ body {
     
     
   }
+  
+  h1 {
+
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+
+  }
 
   #intro-text {
     padding-top:100px;
@@ -58,7 +69,8 @@ body {
   }
 
   h4 {
-    font-family: 'Bowlby One SC', cursive;
+    /*font-family: 'Bowlby One SC', cursive;*/
+    font-family: 'Montserrat', sans-serif;
   }
 
   #hero-image {
@@ -178,11 +190,10 @@ box-shadow: 5px 10px 8px #e0e0e0;
 }
 
 
-/* div[class*="thumb"]:hover .thumb-image:before { 
-height: 99%;
-transition: all 1s ease-in;
+ div[class*="thumb"] p { 
+  color:#727374;
 
-} */
+}
 
 a[class*="nav-link"] {
 margin-right:40px;
@@ -242,7 +253,7 @@ line-height: 0;
 .custom-shape-divider-top-1645228639 svg {
 position: relative;
 display: block;
-width: calc(100%);
+width: calc(100% + 1px);
 height: 181px;
 
 
