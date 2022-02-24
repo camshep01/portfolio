@@ -39,8 +39,8 @@
           <div class="container">
               <div class="row" style="padding:20px 0px 20px 0px;">
                 <div class="col-md-6">
-                    <h1>Project Header</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h1>Good Vibes</h1>
+                    <p>Another installement in my generative art with Processing "series". This portrait was yet again created with pointillism from a photo as reference.</p>
                 </div>
                   <div class="col-md-6">
                       <img  class="thumb-image-3" src="../images/screen-1475595.jpg" style="height:100%;" />      
@@ -52,8 +52,8 @@
             <div class="row" style="padding-top:40px; background-color:#e7eaed; min-height:400px;">
                 <div class="col-md-3"></div>
                     <div class="col-md-6 text-center">
-                        <h1>Header</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <h1>Transitions</h1>
+                        <p>During the drawing process screenshots of image were taken and used to build frames that were later combined in video.</p>
                         <div class="row">
                             <div class="col-md-2 p-2">
                                 <img src="../images/screen-68162.jpg" style="height:150px;width:100px;" />  
@@ -85,8 +85,8 @@
                         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@graphicelements/video/7004858481203236102" data-video-id="7004858481203236102"> <section> <a target="_blank" title="@graphicelements" href="https://www.tiktok.com/@graphicelements">@graphicelements</a> <a title="generativeart" target="_blank" href="https://www.tiktok.com/tag/generativeart">#generativeart</a> <a title="graphicdesign" target="_blank" href="https://www.tiktok.com/tag/graphicdesign">#graphicdesign</a> <a title="codeart" target="_blank" href="https://www.tiktok.com/tag/codeart">#codeart</a> <a title="art" target="_blank" href="https://www.tiktok.com/tag/art">#art</a> <a title="artist" target="_blank" href="https://www.tiktok.com/tag/artist">#artist</a> <a title="illustration" target="_blank" href="https://www.tiktok.com/tag/illustration">#illustration</a> <a target="_blank" title="♬ r&#38;b loop - Official Sound Studio" href="https://www.tiktok.com/music/rb-loop-6723099489072057095">♬ r&#38;b loop - Official Sound Studio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>   
                       </div>
                       <div class="col-md-6">
-                        <h1>Project Header</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <h1>Project Code</h1>
+                        <p>Sample of the code used to create the image.</p>
                        <pre>
                         <code>
                           PImage img;
@@ -173,8 +173,8 @@
                 <div class="row" style="padding-top:40px; background-color:#e7eaed; min-height:400px;">
                     <div class="col-md-3"></div>
                         <div class="col-md-6 text-center">
-                            <h1>Header</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h1>Final Thoughts</h1>
+                            <p>The combination of highly detailed and more abstract portions of the image, achieved my using varying sizes of squares, proved effective in creating more visual interest.</p>
                         </div>
                     <div class="col-md-3"></div>
                 </div>
@@ -194,7 +194,7 @@
     <section id="footer">
         <div class="container-fluid white">
           <div class="row" style="background-color: black;">
-            <p>Graphic Elements &copy; 2022</p>
+            <p>Graphic Elements &copy; <span id="year"></span></p>
             </div>
           </div>
   
@@ -206,6 +206,11 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="../routes.js"></script>
+<script>
+  const d = new Date();
+  let year = d.getFullYear();
+  document.getElementById('year').innerHTML = year;
+</script>
 
 </body>
 </html>
